@@ -1,0 +1,19 @@
+{
+  "name": "notes-web",
+  "version": "0.1.0",
+  "description": "Note taking web app",
+  "main": "public/index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitlab.com/nikkehtine/notes-web.git"
+  },
+  "author": "nikkehtine",
+  "license": "Beerware",
+  "bugs": {
+    "url": "https://gitlab.com/nikkehtine/notes-web/issues"
+  },
+  "homepage": "https://notes-web-virid.vercel.app"
+}

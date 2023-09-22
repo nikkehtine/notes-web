@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="scripts/htmx.min.js" defer></script>
   </head>
   <body>
-    <h1>Hello World</h1>
+    <div hx-get="/api/hello">Get the message</div>
   </body>
 </html>
