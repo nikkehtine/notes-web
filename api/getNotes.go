@@ -22,11 +22,12 @@ var db = []Note{
 }
 
 // ReturnAllNotes is a function that writes all the notes to the given http.ResponseWriter.
-func ReturnAllNotes(w http.ResponseWriter, notes []Note) {
-	for i := 0; i < len(notes); i++ {
-		err := templs.Execute(&buf, notes[i])
+func ReturnAllNotes(w http.ResponseWriter, r *http.Request) {
+	for i := 0; i < len(db); i++ {
+		err := templs.Execute(&buf, db[i])
 		if err != nil {
 			http.Error(w, err.Error(), http.StatusInternalServerError)
+			log.Fatal(err)
 		}
 	}
 
